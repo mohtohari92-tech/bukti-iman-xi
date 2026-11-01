@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tugas Daring PAI – Bukti Iman kepada Allah SWT</title>
+<style>
+:root{--bg:#f3f6f2;--card:#fff;--ink:#1d2b26;--mute:#5b6b64;--line:#d6e0da;--pri:#0f6b57;--pri2:#e3f2ed;--ok:#17803d;--okbg:#e2f5e8;--bad:#b3261e;--badbg:#fbe7e5;--gold:#a8741a;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121a17;--card:#1b2622;--ink:#e6efeb;--mute:#9fb1a9;--line:#2f3f39;--pri:#4cc5a4;--pri2:#1f332d;--ok:#5fd18a;--okbg:#18321f;--bad:#ff8a80;--badbg:#3a1d1b;--gold:#e0b25a}}
+:root[data-theme="dark"]{--bg:#121a17;--card:#1b2622;--ink:#e6efeb;--mute:#9fb1a9;--line:#2f3f39;--pri:#4cc5a4;--pri2:#1f332d;--ok:#5fd18a;--okbg:#18321f;--bad:#ff8a80;--badbg:#3a1d1b;--gold:#e0b25a}
+html{color-scheme:light dark;scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 Georgia,"Times New Roman",serif}
+main{max-width:720px;margin:0 auto;padding:20px 16px 60px}
+h1,h2,h3,button,input,label,.tab{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+h1{font-size:1.6rem;line-height:1.25;margin:.2em 0 .3em}
+h2{font-size:1.25rem;margin:0 0 .5em}
+h3{font-size:1rem;margin:1.2em 0 .4em}
+.sub{color:var(--mute);margin:0 0 1em}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px;margin:14px 0}
+input[type=text],textarea{width:100%;font:inherit;padding:10px 12px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink)}
+textarea{min-height:110px;resize:vertical}
+label{font-weight:600;font-size:.9rem;display:block;margin:10px 0 4px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:520px){.row{grid-template-columns:1fr}}
+button{font-size:1rem;font-weight:600;border:0;border-radius:8px;padding:11px 18px;cursor:pointer;background:var(--pri);color:#fff}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) button.p{color:#0b1f19}}
+button.g{background:var(--pri2);color:var(--pri)}
+button:focus-visible,input:focus-visible,textarea:focus-visible,.opt:focus-within{outline:3px solid var(--gold);outline-offset:2px}
+.tabs{display:flex;gap:6px;overflow-x:auto;padding:4px 0;position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);z-index:5}
+.tab{flex:0 0 auto;padding:8px 12px;border-radius:20px;border:1px solid var(--line);background:var(--card);color:var(--ink);font-size:.85rem;font-weight:600}
+.tab[aria-selected=true]{background:var(--pri);color:#fff;border-color:var(--pri)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .tab[aria-selected=true]{color:#0b1f19}}
+.tab.done::after{content:" ✓"}
+.dalil{border-left:4px solid var(--gold);padding:6px 12px;margin:12px 0;background:var(--pri2);border-radius:0 8px 8px 0;font-style:italic}
+.dalil small{display:block;font-style:normal;color:var(--mute);font-family:system-ui,sans-serif}
+.q{margin:18px 0;padding-top:14px;border-top:1px dashed var(--line)}
+.q p{margin:0 0 8px;font-weight:600}
+.opt{display:flex;gap:10px;align-items:flex-start;padding:9px 12px;margin:6px 0;border:1px solid var(--line);border-radius:8px;cursor:pointer;font-family:system-ui,sans-serif;font-size:.95rem}
+.opt.ok{background:var(--okbg);border-color:var(--ok)}
+.opt.bad{background:var(--badbg);border-color:var(--bad)}
+.fb{font-family:system-ui,sans-serif;font-size:.9rem;margin-top:6px;color:var(--mute)}
+.bar{height:8px;background:var(--line);border-radius:8px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--pri);width:0;transition:width .3s}
+.nav{display:flex;justify-content:space-between;gap:10px;margin-top:18px}
+.score{font:700 2.4rem/1 system-ui,sans-serif;color:var(--pri)}
+pre{white-space:pre-wrap;background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:12px;font:.85rem/1.5 ui-monospace,monospace;color:var(--ink)}
+.hide{display:none}
+@media print{.tabs,.nav,button{display:none}}
+</style>
+</head>
+<body>
+<main>
+<h1>Bukti Iman kepada Allah SWT</h1>
+<p class="sub">Pendidikan Agama Islam dan Budi Pekerti · Kelas XI SMK<br>Memenuhi janji, mensyukuri nikmat, menjaga lisan, dan menutup aib orang lain.</p>
+
+<section class="card" id="intro">
+<h2>Isi data dirimu</h2>
+<div class="row">
+<div><label for="nama">Nama lengkap</label><input type="text" id="nama" autocomplete="name"></div>
+<div><label for="kelas">Kelas / Jurusan</label><input type="text" id="kelas" placeholder="XI TKJ 1"></div>
+</div>
+<p class="sub" style="margin-top:14px">Ada 4 bagian. Tiap bagian berisi ringkasan materi, 3 soal pilihan ganda, dan 1 refleksi singkat. Jawab pilihan ganda dengan jujur: kamu langsung melihat jawabannya, tetapi skor hanya dihitung dari jawaban pertamamu.</p>
+<button class="p" id="mulai">Mulai belajar</button>
+</section>
+
+<div id="app" class="hide">
+<div class="bar" aria-hidden="true"><i id="prog"></i></div>
+<div class="tabs" role="tablist" id="tabs"></div>
+<div id="view"></div>
+</div>
+</main>
+
+<script>
+const S=[
+{t:"Memenuhi janji",
+m:`<p>Janji adalah amanah yang kelak dimintai pertanggungjawaban. Menepati janji, baik kepada Allah, orang tua, guru, teman, maupun pelanggan di dunia kerja, adalah tanda iman. Ingkar janji termasuk ciri orang munafik.</p>
+<div class="dalil">“Dan penuhilah janji; sesungguhnya janji itu pasti diminta pertanggungjawabannya.”<small>QS. Al-Isra’ [17]: 34</small></div>
+<p>Tanda orang munafik ada tiga: apabila berbicara ia berdusta, apabila berjanji ia mengingkari, dan apabila dipercaya ia berkhianat (HR. Bukhari dan Muslim). Di SMK, menepati janji tampak pada ketepatan waktu praktik, penyerahan tugas proyek, dan kesepakatan dengan klien atau tempat PKL.</p>`,
+q:[
+["Sikap yang paling sesuai dengan QS. Al-Isra’ ayat 34 adalah …",["Berjanji sebanyak mungkin agar disukai orang","Menepati janji karena akan dimintai pertanggungjawaban","Menepati janji hanya jika menguntungkan","Boleh mengingkari janji kepada teman"],1,"Ayat itu menegaskan bahwa janji pasti dimintai pertanggungjawaban."],
+["Saat PKL kamu berjanji menyelesaikan laporan hari Jumat, tetapi ada tugas lain yang menumpuk. Tindakan terbaik …",["Diam saja dan berharap pembimbing lupa","Menyerahkan laporan asal-asalan","Menyelesaikan tepat waktu, atau menyampaikan kendala sejak awal dan meminta kesepakatan baru","Menyalahkan teman satu tim"],2,"Jujur menyampaikan kendala lebih baik daripada diam dan mengingkari."],
+["Salah satu tanda munafik menurut hadis adalah …",["Berjanji lalu mengingkari","Bersedekah diam-diam","Menolong teman","Meminta maaf"],0,"Ingkar janji disebut dalam hadis sebagai ciri munafik."]],
+r:"Ceritakan satu janji yang pernah kamu ingkari atau berhasil kamu tepati. Apa pengaruhnya pada orang lain, dan apa langkahmu agar janji berikutnya selalu ditepati?"},
+{t:"Mensyukuri nikmat",
+m:`<p>Syukur adalah mengakui nikmat dari Allah dalam hati, mengucapkannya dengan lisan (<i>Alhamdulillah</i>), dan menggunakannya dalam ketaatan. Syukur bukan hanya ucapan, melainkan juga perbuatan.</p>
+<div class="dalil">“Sungguh, jika kamu bersyukur, niscaya Aku akan menambah (nikmat) kepadamu, tetapi jika kamu mengingkari (nikmat-Ku), maka sungguh azab-Ku sangat berat.”<small>QS. Ibrahim [14]: 7</small></div>
+<p>Contoh syukur bagi pelajar SMK: memakai ilmu dan keterampilan untuk bermanfaat, merawat alat praktik, tidak boros, rajin belajar, dan berterima kasih kepada orang tua serta guru. Lawan syukur adalah kufur nikmat: mengeluh terus, sombong, dan menyia-nyiakan karunia.</p>`,
+q:[
+["Syukur yang sempurna meliputi …",["Hati, lisan, dan perbuatan","Lisan saja","Hati saja","Media sosial saja"],0,"Syukur dilakukan dengan hati, lisan, dan perbuatan."],
+["Menurut QS. Ibrahim ayat 7, orang yang bersyukur akan …",["Dibiarkan saja","Ditambah nikmatnya","Dijauhkan dari ujian","Diberi tanpa berusaha"],1,"Allah menjanjikan tambahan nikmat bagi yang bersyukur."],
+["Contoh syukur atas keterampilan praktik di bengkel/lab adalah …",["Memamerkan hasil kerja dengan sombong","Merawat alat dan memakai keterampilan untuk hal yang bermanfaat","Meremehkan teman yang belum bisa","Menunda belajar karena merasa sudah pandai"],1,"Merawat alat dan memanfaatkan ilmu untuk kebaikan adalah syukur dalam perbuatan."]],
+r:"Tuliskan 3 nikmat Allah yang paling kamu rasakan saat ini, lalu jelaskan satu cara nyata untuk mensyukuri masing-masingnya."},
+{t:"Menjaga lisan",
+m:`<p>Lisan kecil, tetapi dampaknya besar: bisa menyambung persaudaraan atau merusaknya. Menjaga lisan berarti menghindari dusta, ghibah (membicarakan keburukan orang), namimah (adu domba), hinaan, dan ujaran kebencian.</p>
+<div class="dalil">“Barang siapa beriman kepada Allah dan hari akhir, hendaklah ia berkata baik atau diam.”<small>HR. Bukhari dan Muslim</small></div>
+<p>Di era digital, “lisan” juga mencakup jari kita: komentar, status, chat grup, dan unggahan. Sebelum mengetik, tanyakan: benarkah, bermanfaatkah, dan baikkah untuk orang yang dibicarakan?</p>`,
+q:[
+["Menurut hadis, orang beriman hendaknya …",["Berkata baik atau diam","Berkata apa saja yang terlintas","Selalu membalas ejekan","Membicarakan orang agar akrab"],0,"Inti hadis: berkata baik atau diam."],
+["Membicarakan keburukan teman yang benar adanya, tanpa sepengetahuannya, disebut …",["Nasihat","Ghibah","Tabayun","Syukur"],1,"Itu ghibah; kalau tidak benar, namanya fitnah."],
+["Temanmu mengunggah komentar kasar tentang teman lain di grup kelas. Sikap yang tepat …",["Ikut menambahkan komentar","Menyebarkan tangkapan layarnya","Mengingatkan dengan santun, lebih baik secara pribadi, dan tidak ikut menyebarkan","Menertawakan saja"],2,"Mengingatkan dengan santun dan tidak ikut menyebarkan adalah bentuk menjaga lisan."]],
+r:"Ceritakan pengalaman ucapan atau komentar (termasuk di media sosial) yang pernah menyakiti orang lain atau menyakitimu. Apa pelajaran dan komitmenmu ke depan?"},
+{t:"Menutup aib orang lain",
+m:`<p>Setiap manusia punya kekurangan. Menutup aib berarti tidak membuka dan menyebarkan kekurangan atau kesalahan pribadi orang lain, sambil tetap menasihatinya dengan cara baik.</p>
+<div class="dalil">“Barang siapa menutupi (aib) seorang muslim, Allah akan menutupi (aibnya) di dunia dan akhirat.”<small>HR. Muslim</small></div>
+<p>Menutup aib tidak berarti membiarkan kejahatan. Jika ada bahaya atau pelanggaran serius (misalnya perundungan atau penipuan), laporkan kepada pihak berwenang seperti guru BK, wali kelas, atau orang tua, bukan disebar ke publik.</p>`,
+q:[
+["Balasan bagi orang yang menutup aib sesama muslim adalah …",["Allah menutup aibnya di dunia dan akhirat","Tidak ada balasan khusus","Dipuji teman-temannya saja","Dijauhi orang"],0,"Itu isi hadis riwayat Muslim."],
+["Kamu mengetahui temanmu pernah berbuat salah kecil dan sudah menyesal. Sebaiknya …",["Menceritakannya ke teman lain","Mengunggah sindiran di media sosial","Menjaga rahasianya dan menasihati secara pribadi","Menjadikannya bahan candaan"],2,"Menasihati secara pribadi dan merahasiakannya adalah akhlak mulia."],
+["Menutup aib TIDAK berarti …",["Menasihati dengan lembut","Menjaga kehormatan teman","Membiarkan perundungan serius tanpa melapor kepada guru BK atau wali kelas","Tidak menyebarkan kesalahan pribadi"],2,"Pelanggaran serius tetap harus dilaporkan kepada pihak yang berwenang."]],
+r:"Bagaimana kamu menyikapi bila ada teman yang aibnya diketahui banyak orang? Tuliskan 3 langkah konkret yang akan kamu lakukan sebagai muslim yang beriman."}
+];
+const $=id=>document.getElementById(id);
+let cur=0,ans={},first={},refl={},done=new Set();
+function key(s,i){return s+"_"+i}
+$("mulai").onclick=()=>{
+ if(!$("nama").value.trim()){$("nama").focus();$("nama").placeholder="Nama wajib diisi";return}
+ $("intro").classList.add("hide");$("app").classList.remove("hide");render()};
+function tabs(){
+ $("tabs").innerHTML="";
+ [...S.map(s=>s.t),"Hasil"].forEach((t,i)=>{
+  const b=document.createElement("button");b.className="tab"+(done.has(i)?" done":"");
+  b.setAttribute("role","tab");b.setAttribute("aria-selected",i==cur);b.textContent=t;
+  b.onclick=()=>{cur=i;render()};$("tabs").appendChild(b)});
+ $("prog").style.width=(done.size/S.length*100)+"%"}
+function render(){
+ tabs();const v=$("view");v.innerHTML="";window.scrollTo({top:0});
+ if(cur==S.length)return result(v);
+ const s=S[cur];
+ let h=`<section class="card"><h2>${cur+1}. ${s.t}</h2>${s.m}<h3>Latihan soal</h3>`;
+ s.q.forEach((q,qi)=>{
+  const k=key(cur,qi),a=ans[k];
+  h+=`<div class="q"><p>${qi+1}) ${q[0]}</p>`;
+  q[1].forEach((o,oi)=>{
+   let c="opt";if(a!==undefined){if(oi==q[2])c+=" ok";else if(oi==a)c+=" bad"}
+   h+=`<label class="${c}"><input type="radio" name="${k}" value="${oi}" ${a==oi?"checked":""} ${a!==undefined?"disabled":""}> <span>${o}</span></label>`});
+  if(a!==undefined)h+=`<div class="fb">${a==q[2]?"Benar. ":"Kurang tepat. "}${q[3]}</div>`;
+  h+=`</div>`});
+ h+=`<h3>Refleksi</h3><p>${s.r}</p><textarea id="ref" placeholder="Tulis jawabanmu minimal 2–3 kalimat…">${refl[cur]||""}</textarea><div class="fb" id="cnt"></div>
+ <div class="nav"><button class="g" ${cur==0?"disabled":""} id="prev">Sebelumnya</button><button class="p" id="next">${cur==S.length-1?"Lihat hasil":"Simpan dan lanjut"}</button></div></section>`;
+ v.innerHTML=h;
+ v.querySelectorAll("input[type=radio]").forEach(r=>r.onchange=e=>{
+  const k=e.target.name;if(ans[k]===undefined){ans[k]=+e.target.value;first[k]=ans[k]}render()});
+ const t=$("ref"),cn=()=>$("cnt").textContent=t.value.trim().split(/\s+/).filter(Boolean).length+" kata";
+ t.oninput=()=>{refl[cur]=t.value;cn()};cn();
+ $("prev").onclick=()=>{cur--;render()};
+ $("next").onclick=()=>{
+  const miss=S[cur].q.some((_,i)=>ans[key(cur,i)]===undefined);
+  if(miss){alert("Jawab dulu ketiga soal pilihan ganda.");return}
+  if((refl[cur]||"").trim().split(/\s+/).filter(Boolean).length<8){alert("Isi refleksi minimal 8 kata.");t.focus();return}
+  done.add(cur);cur++;render()}}
+function calc(){let b=0;S.forEach((s,si)=>s.q.forEach((q,qi)=>{if(first[key(si,qi)]===q[2])b++}));return b}
+function result(v){
+ const tot=S.reduce((n,s)=>n+s.q.length,0),b=calc(),nil=Math.round(b/tot*100);
+ const ok=done.size==S.length;
+ let txt=`TUGAS PAI – Bukti Iman kepada Allah SWT\nNama: ${$("nama").value}\nKelas: ${$("kelas").value}\nSkor pilihan ganda: ${b}/${tot} (${nil})\n`;
+ S.forEach((s,i)=>txt+=`\n[${s.t}]\nRefleksi: ${(refl[i]||"-").trim()}\n`);
+ v.innerHTML=`<section class="card"><h2>Hasil tugasmu</h2>
+ <div class="score">${nil}</div><p class="sub">${b} dari ${tot} soal benar pada percobaan pertama.</p>
+ ${ok?`<p>${nil>=80?"Barakallah, pemahamanmu sangat baik. Terapkan dalam keseharian.":nil>=60?"Cukup baik. Baca ulang bagian yang masih keliru.":"Ayo ulangi materi dengan tenang, lalu coba lagi bersama gurumu."}</p>
+ <p>Salin hasil di bawah ini, lalu kirim kepada gurumu (misalnya lewat WhatsApp atau LMS), atau cetak halaman ini.</p><pre id="out"></pre>
+ <div class="nav"><button class="g" onclick="window.print()">Cetak / simpan PDF</button><button class="p" id="cp">Salin hasil</button></div>`
+ :`<p>Selesaikan dulu semua bagian (${done.size}/${S.length}). Bagian yang sudah selesai ditandai ✓.</p>`}</section>`;
+ if(ok){$("out").textContent=txt;$("cp").onclick=async()=>{try{await navigator.clipboard.writeText(txt);$("cp").textContent="Tersalin"}catch(e){const r=document.createRange();r.selectNodeContents($("out"));getSelection().removeAllRanges();getSelection().addRange(r);$("cp").textContent="Teks terpilih, tekan salin"}}}}
+</script>
+</body>
+</html>
